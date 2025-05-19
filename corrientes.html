@@ -1,0 +1,189 @@
+    <!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Corrientes Filosóficas Medievales</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Lato:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="logo">Φ <FIiloso>Filosofía</FIiloso>
+        </div>
+        <nav>
+            <a href="index.html">Inicio</a>
+            <a href="corrientes.html">Corrientes</a>
+            <a href="historia.html">Historia</a>
+            <a href="equipo.html">Equipo</a>
+            <a href="video.html">Video</a>
+        </nav>
+    </header>
+
+    <main>
+        <h1 class="titulo-principal">Corrientes Filosóficas Medievales</h1>
+        
+        <div class="card-container">
+            <!-- Patrística -->
+            <div class="cardview" onclick="toggleDetails('Patrística')">
+                <h3>Patrística</h3>
+                <p>siglos I - VIII</p>
+                <ul>
+                    <li>Desarrollada por los primeros Padres de la Iglesia.</li>
+                    <li>Desarrollada por los primeros Padres de la Iglesia.</li>
+                    <li>Filósofos principales: San Agustín de Hipona, Orígenes, Tertuliano.</li>
+                    <li>Ideas clave: Dios es la fuente de la verdad, el conocimiento se obtiene por la fe y la razón.</li>
+                </ul>
+                
+                <div id="Patrística" class="card-details">
+                    <span class="close-btn" onclick="closeCard(this.closest('.cardview'))">×</span>
+                    <div class="filosofo-info">
+                        <img src="patristica.webp" alt="Tomás de Aquino" class="filosofo-img">
+                        <div>
+                            <h4>Tomás de Aquino (1225-1274)</h4>
+                            <p><strong>Obras principales:</strong></p>
+                            <ul>
+                                <li>Summa Theologiae</li>
+                                <li>Summa contra Gentiles</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Escolástica -->
+            <div class="cardview" onclick="toggleDetails('Escolástica')">
+                <h3>Escolástica</h3>
+                <p>Siglos IX - XV</p>
+                <ul>
+                    <li>Sistema filosófico-teológico basado en la lógica y el método aristotélico.</li>
+                    <li>Intentó armonizar la razón con la fe cristiana.</li>
+                    <li>Filósofos principales: Santo Tomás de Aquino, San Anselmo, Pedro Abelardo.</li>
+                    <li>Ideas clave: La razón y la fe no se contradicen; Dios puede ser conocido a través de la lógica y la teología natural.</li>
+                </ul>
+                
+                <div id="Escolástica" class="card-details">
+                    <span class="close-btn" onclick="closeCard(this.closest('.cardview'))">×</span>
+                    <div class="filosofo-info">
+                        <img src="ecolastica.webp" alt="Místico medieval" class="filosofo-img">
+                        <div>
+                            <h4>Maestro Eckhart (1260-1328)</h4>
+                            <p><strong>Obras principales:</strong></p>
+                            <ul>
+                                <li>Tratados y sermones</li>
+                                <li>El libro del consuelo divino</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+             <!-- Filosofía judía e islámica medieval -->
+             <div class="cardview" onclick="toggleDetails('Filosofía judía e islámica medieval')">
+                <h3> Filosofía judía e islámica medieval</h3>
+                <p>Siglos IX - XV</p>
+                <ul>
+                    <li>Intelectuales judíos y musulmanes influyeron en la filosofía medieval cristiana.</li>
+                    <li>Filósofos principales: Maimónides (judaísmo), Al-Farabí y Avicena (islam).</li>
+                    <li>Ideas clave: Dios es la causa primera, la razón y la fe pueden coexistir.</li>
+                </ul>
+                
+                <div id="Filosofía judía e islámica medieval" class="card-details">
+                    <span class="close-btn" onclick="closeCard(this.closest('.cardview'))">×</span>
+                    <div class="filosofo-info">
+                        <img src="judia.htm" alt="Místico medieval" class="filosofo-img">
+                        <div>
+                            <h4>Maestro Eckhart (1260-1328)</h4>
+                            <p><strong>Obras principales:</strong></p>
+                            <ul>
+                                <li>Tratados y sermones</li>
+                                <li>El libro del consuelo divino</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+             <!-- Misticismo medieval -->
+             <div class="cardview" onclick="toggleDetails('misticismo medieval')">
+                <h3>Misticismo medieval</h3>
+                <p>siglos XIII - XIV</p>
+                <ul>
+                    <li>Enfatizaba la experiencia directa con Dios a través de la contemplación y la espiritualidad.</li>
+                    <li>Filósofos principales: Meister Eckhart, Santa Teresa de Ávila, San Juan de la Cruz.</li>
+                    <li>Ideas clave: La unión con Dios se alcanza por el amor y la meditación, más que por la razón.</li>
+                </ul>
+                
+                <div id="misticismo medieval" class="card-details">
+                    <span class="close-btn" onclick="closeCard(this.closest('.cardview'))">×</span>
+                    <div class="filosofo-info">
+                        <img src="https://source.unsplash.com/random/200x200?medieval-monk" alt="Místico medieval" class="filosofo-img">
+                        <div>
+                            <h4>Maestro Eckhart (1260-1328)</h4>
+                            <p><strong>Obras principales:</strong></p>
+                            <ul>
+                                <li>Tratados y sermones</li>
+                                <li>El libro del consuelo divino</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="cardview" onclick="toggleDetails('Averroísmo')">
+                <h3>Averroísmo latino</h3>
+                <p>siglos XII - XIII</p>
+                <ul>
+                    <li>Inspirado en las ideas del filósofo musulmán Averroes.</li>
+                    <li>Defendía la "doble verdad": la razón y la fe pueden llegar a conclusiones diferentes sin ser contradictorias.</li>
+                    <li>Filósofos principales: Averroes, Siger de Brabante.</li>
+                    <li>Ideas clave: El intelecto es universal y separado de las almas individuales.
+                </ul>
+                
+                <div id="Averroísmo" class="card-details">
+                    <span class="close-btn" onclick="closeCard(this.closest('.cardview'))">×</span>
+                    <div class="filosofo-info">
+                        <img src="averroismo.webp" alt="Tomás de Aquino" class="filosofo-img">
+                        <div>
+                            <h4>Tomás de Aquino (1225-1274)</h4>
+                            <p><strong>Obras principales:</strong></p>
+                            <ul>
+                                <li>Summa Theologiae</li>
+                                <li>Summa contra Gentiles</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    ><img src="edad-media portada principal.webp" alt="portada principal">
+
+    <footer>
+        <p>© 2024 Equipo Filosofía. Todos los derechos reservados.</p>
+        <p>Contacto: equipo@filosofia.com</p>
+    </footer>
+
+    <script>
+        function toggleDetails(id) {
+            let selectedCard = document.getElementById(id).closest('.cardview');
+
+            if (selectedCard.classList.contains('expanded')) {
+                closeCard(selectedCard);
+            } else {
+                document.querySelectorAll('.cardview').forEach(card => {
+                    card.classList.remove('expanded');
+                });
+
+                selectedCard.classList.add('expanded');
+                document.body.classList.add('no-scroll');
+            }
+        }
+
+        function closeCard(card) {
+            card.classList.remove('expanded');
+            document.body.classList.remove('no-scroll');
+        }
+    </script>
+</body>
+</html>
